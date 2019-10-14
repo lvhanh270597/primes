@@ -1,0 +1,1 @@
+bool snt(int x);
