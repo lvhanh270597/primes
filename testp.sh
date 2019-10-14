@@ -1,4 +1,4 @@
-./main < inputp.txt > outputp.txt
+./primes < inputp.txt > outputp.txt
 cmp templatep.txt outputp.txt
 if [ $? -ne 0 ]; then
 	exit 1
