@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Compile') {
+        stage('CompileF') {
             steps {
                 echo "Compiling..."
 		sh 'g++ main.cpp -o main'
@@ -10,7 +10,19 @@ pipeline {
 	stage('TestF') {
 	    steps {
 		echo "Testing function..."
-		sh './test.sh'
+		sh './testf.sh'
+	    }
+	}
+	stage('CompileP') {
+	    steps {
+		echo "Compiling code..."
+		sh 'g++ primes.cpp -o primes'
+	    }
+	}
+	stage('TestP') {
+	    steps {
+		echo "Testing primes..."
+		sh './testp.sh'
 	    }
 	}
     }
