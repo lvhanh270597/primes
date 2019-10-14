@@ -4,7 +4,7 @@ pipeline {
         stage('Compile') {
             steps {
                 echo "Compiling..."
-		g++ main.cpp -o main
+		sh 'g++ main.cpp -o main'
             }
         }
 	stage("Test function"){
