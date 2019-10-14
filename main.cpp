@@ -10,5 +10,6 @@ int main(){
 		cin>>x;
 		cout<<(snt(x));
 	}
+	cout<<endl;
 	return 0;
 }
