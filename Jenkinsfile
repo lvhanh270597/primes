@@ -7,10 +7,10 @@ pipeline {
 		sh 'g++ main.cpp -o main'
             }
         }
-	stage("Test function") {
+	stage('TestF') {
 	    steps {
 		echo "Testing function..."
-		sh ./test.sh
+		sh './test.sh'
 	    }
 	}
     }
