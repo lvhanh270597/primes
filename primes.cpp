@@ -6,7 +6,7 @@ using namespace std;
 int n;
 int main(){
 	cin>>n;
-	for (int i=1; i<=n; i++){
+	for (int i=2; i<=n; i++){
 		if (snt(i)){
 			cout<<i<<endl;
 		}
