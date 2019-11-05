@@ -11,7 +11,7 @@ class Primes {
 	}
 	public function dem_uoc(){
 		$cnt = 0;
-		for ($i=1; $i<=$this->N; $i++){
+		for ($i=1; $i<$this->N; $i++){
 			if ($this->N % $i == 0){
 				$cnt += 1;
 			}
